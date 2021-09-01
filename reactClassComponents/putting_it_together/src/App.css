@@ -11,6 +11,7 @@
 
 .btn{
   -webkit-text-stroke: 0.39px black;
+  border-radius: 55px;
 }
 
 .App-logo {

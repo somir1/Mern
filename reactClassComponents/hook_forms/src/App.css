@@ -1,13 +1,19 @@
 *{
   margin: 0;
   padding: 0;
+  color: black;
+  font-size: 15px;
   font-family: 'ZCOOL KuaiLe', cursive;
+  -webkit-text-stroke: 0.20px white;
+}
+
+body{
+  background-color: #282c34;
 }
 
 .App {
   /* text-align: center; */
   align-items: center;
-  
 }
 
 .App-logo {

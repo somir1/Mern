@@ -4,7 +4,7 @@ import User from './components/User';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App container ">
         <br />
         <h1>Welcome, please register below</h1>
         <br />

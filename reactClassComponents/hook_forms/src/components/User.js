@@ -9,7 +9,7 @@ const User = () => {
     const [conpass, setconpass] = useState("");
 
     return (
-        <div className = "container form-control m-2">
+        <div className = "bg-dark text-white container form-control m-2">
             <form>
                 <div className="form-group">
                     <label htmlFor="fname">First Name:</label>

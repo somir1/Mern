@@ -3,6 +3,10 @@
   padding: 0;
   font-family: 'Patrick Hand', cursive;
   font-size: 25px;
+  background-color: #282c34;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  gap: 1em;
 }
 
 .App {

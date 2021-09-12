@@ -26,6 +26,9 @@ class Company{
 console.log(new User())
 console.log(new Company())
 
+app.use( express.json() );
+app.use( express.urlencoded({ extended: true }) );
+
 app.get("/api/users/new", (req, res) => {
     let newUser = new User()
     res.json({ data: newUser });

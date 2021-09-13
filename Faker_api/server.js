@@ -25,6 +25,8 @@ class Company{
 
 console.log(new User())
 console.log(new Company())
+console.log(new User())
+console.log(new Company())
 
 app.get("/api/users/new", (req, res) => {
     let newUser = new User()

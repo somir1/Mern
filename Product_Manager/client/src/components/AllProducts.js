@@ -35,12 +35,12 @@ const AllProducts = (props) => {
     }
 
     return (
-        <div className = "container input2">
+        <div className = "App container input2">
             <h1>All Products</h1>
             {/* get all products from the map */}
             {allProducts.map((product, idx) => {
-                return <ul key = {idx}  className="list-group">
-                <li className="list-group-item "><Link to={`/show/${product._id}`}>{product.title}</Link> | <Link to = {`/edit/${product._id}`} className = "btn btn-success">Edit</Link> | <button onClick = { (e) => deleted(e, product._id)} className="btn btn-danger">Delete</button></li>
+                return <ul key = {idx}  className="App list-group">
+                <li className="list-group-item App"><Link to={`/show/${product._id}`}>{product.title}</Link> | <Link to = {`/edit/${product._id}`} className = "btn btn-success">Edit</Link> | <button onClick = { (e) => deleted(e, product._id)} className="btn btn-danger">Delete</button></li>
                 <br />
               </ul>
             })}

@@ -6,7 +6,7 @@ const products = new mongoose.Schema({
     title: {
         type: String,
         required: [true, "Field can not be blank"],
-        min: [3, "Title must be more then 3 charchters"]
+        minlength: [3, "Title must be more then 3 charchters"]
 },
     price: {
         type: Number,
@@ -15,7 +15,7 @@ const products = new mongoose.Schema({
     description: {
         type: String,
         required: [true, "Field can not be blank"],
-        min: [3, "Description must be more then 3 charchters"]
+        minlength: [3, "Description must be more then 3 charchters"]
     }
 });
 

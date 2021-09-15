@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory } from "react-router-dom";
 
-const ProductForm = () => {
+const ProductForm = (props) => {
 
     const history = useHistory();
 
@@ -43,7 +43,7 @@ const ProductForm = () => {
                     setValidationErrors(res.data.err.errors)
 
                 }else{ //if the form is filled out properly
-                    history.push("/"); //this redirects to home if form is submitting properly
+                props.setSubmitted(!props.submitted)
 
                 }
             })

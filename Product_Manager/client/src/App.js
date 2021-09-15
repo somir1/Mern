@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
 import ProductForm from './components/ProductForm';
 import AllProducts from './components/AllProducts';
 import ShowProduct from './components/showproduct';
@@ -13,6 +14,9 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+  const [submitted, setSubmitted] = useState(false)
+
   return (
     <BrowserRouter>
     <div className="App container">
@@ -20,9 +24,9 @@ function App() {
       <Switch>
 
       <Route exact path = "/">
-      <ProductForm></ProductForm>
+      <ProductForm submitted = {submitted} setSubmitted = {setSubmitted}></ProductForm>
       <hr />
-      <AllProducts></AllProducts>
+      <AllProducts submitted = {submitted}></AllProducts>
       </Route>
 
       <Route exact path = "/show/:idParam">

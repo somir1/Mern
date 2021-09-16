@@ -48,7 +48,7 @@ const ProductForm = (props) => {
                 }
             })
             .catch(err=>console.log("errrrrr-->", err))
-
+            e.target.reset();
     }
 
     return (

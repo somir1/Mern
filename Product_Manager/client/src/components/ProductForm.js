@@ -44,11 +44,16 @@ const ProductForm = (props) => {
 
                 }else{ //if the form is filled out properly
                 props.setSubmitted(!props.submitted)
-
+                setFormInfo({
+                    title: null,
+                    price: null,
+                    description: null
+                })
+                e.target.reset();
                 }
             })
             .catch(err=>console.log("errrrrr-->", err))
-            e.target.reset();
+            
     }
 
     return (

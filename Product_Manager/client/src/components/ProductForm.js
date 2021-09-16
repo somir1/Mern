@@ -44,11 +44,13 @@ const ProductForm = (props) => {
 
                 }else{ //if the form is filled out properly
                 props.setSubmitted(!props.submitted)
+                //clears the state varibles after we post
                 setFormInfo({
                     title: null,
                     price: null,
                     description: null
                 })
+                //clears the form after we post
                 e.target.reset();
                 }
             })
